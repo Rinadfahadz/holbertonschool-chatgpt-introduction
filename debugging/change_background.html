@@ -9,7 +9,7 @@
         font-family: Arial, sans-serif;
         text-align: center;
         padding-top: 50px;
-        transition: background-color 0.5s; /* إضافة حركة ناعمة عند تغير اللون */
+        transition: background-color 0.5s; 
     }
     button {
         padding: 10px 20px;
@@ -30,13 +30,13 @@
     });
 
     function changeBackgroundColor() {
-        // تم تحسين كود اللون ليضمن وجود 6 خانات دائماً
+     
         var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0');
         
-        // تغيير لون الخلفية
+    
         document.body.style.backgroundColor = randomColor;
         
-        // (اختياري) طباعة اللون في الكونسول للتأكد
+   
         console.log("Color changed to: " + randomColor);
     }
 </script>
